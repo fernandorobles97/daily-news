@@ -3,7 +3,7 @@ import './ArticleCard.css'
 
 const ArticleCard = ({ title, source, date, imgSrc }) => {
   return (
-    <Link className='article-card' >
+    <Link to={`/${title}`} className='article-card' >
       <div className='article-details' >
         <h1>{title}</h1>
         <h2>Source: {source}</h2>

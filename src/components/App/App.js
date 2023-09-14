@@ -31,7 +31,7 @@ const App = () => {
       <NavBar />
       <Routes>
         <Route path='/' element={<Home articles={articles} />} />
-        <Route path='/:articleID' element={<ArticleDetails />} />
+        <Route path='/:article' element={<ArticleDetails />} />
       </Routes>
     </div>
   );
