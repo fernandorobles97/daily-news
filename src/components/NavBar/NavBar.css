@@ -1,0 +1,41 @@
+.navbar {
+  /* position: fixed; */
+  width: 100vw; 
+  background-color: antiquewhite;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 110px;
+}
+
+.logo {
+  margin-left: 2vw;
+  width: 500px;
+  max-width: 80vw;
+}
+
+.searchbar {
+  display: flex;
+  align-items: center;
+  margin-right: 2vw;
+}
+
+.search-input {
+  height: 6vh;
+  width: 25vw;
+  border-radius: 10px;
+  border: 2px solid #C20F08;
+  margin-right: 1vw;
+}
+
+.searchbar button {
+  background: none;
+  fill: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.search-icon {
+  height: auto;
+  max-width: 100%;
+}
