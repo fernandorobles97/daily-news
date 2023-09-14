@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import './Home.css'
+import CardContainer from '../CardContainer/CardContainer'
 
-const Home = () => {
+const Home = ({ articles }) => {
   const [sort, setSort] = useState(1)
   return (
     <section className='home'>
@@ -15,7 +16,7 @@ const Home = () => {
           </select>
         </div>
       </div>
-      <p>articles will appear here</p>
+      <CardContainer articles={articles}  />
     </section>
   )
 }
