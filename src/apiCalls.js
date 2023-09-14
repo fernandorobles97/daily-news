@@ -8,7 +8,7 @@ const handleError = (response) => {
 const getAllArticles = async() => {
   let response = await fetch('https://newsapi.org/v2/everything?q=texas&from=2023-09-01&to=2023-09-13&sortBy=popularity&pageSize=50&apiKey=a414268d521d4b3c85746447a4724c87')
   let data = await handleError(response)
-  return data
+  return data.articles
 }
 
 export default getAllArticles
