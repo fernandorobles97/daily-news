@@ -1,0 +1,110 @@
+{
+  "status": "ok",
+  "totalResults": 10650,
+  "articles": [
+      {
+          "source": {
+              "id": "wired",
+              "name": "Wired"
+          },
+          "author": "Jason Parham",
+          "title": "Quan Millz Was the Biggest Mystery on TikTok. Until Now",
+          "description": "The prolific street-lit author’s X-rated books went viral on TikTok. Many believed he was a white writer profiting on Black culture. That was just the beginning.",
+          "url": "https://www.wired.com/story/quan-millz-tiktok-street-lit/",
+          "urlToImage": "https://media.wired.com/photos/6500dc4912839787bfbd8f99/191:100/w_1280,c_limit/QM_Writer.jpg",
+          "publishedAt": "2023-09-13T14:00:13Z",
+          "content": "Even as social media has brought a new fandom to Millzs work, accusations of him being a white man profiting on Black culture continued across TikTok and Twitter. I do understand the concerns over Qu… [+2885 chars]"
+      },
+      {
+          "source": {
+              "id": null,
+              "name": "Gizmodo.com"
+          },
+          "author": "Cheryl Eddy",
+          "title": "Netflix's New UFO Series Aims to See if the Truth Is Out There",
+          "description": "With all the buzz about UFOs—more recently dubbed “Unidentified Anomalous Phenomena,” or UAPs—coming from sources not involving shadowy Men in Black these days, it’s inevitable that a Netflix series was going to come along to capture the moment. Enter Encount…",
+          "url": "https://gizmodo.com/netflix-ufo-series-encounters-trailer-amblin-vice-1850832144",
+          "urlToImage": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/fb2ee566dac3b2932447de087c2c8ed3.jpg",
+          "publishedAt": "2023-09-12T23:15:00Z",
+          "content": "With all the buzz aboutUFOsmore recently dubbed Unidentified Anomalous Phenomena, or UAPscoming from sources not involving shadowy Men in Black these days, its inevitable that a Netflix series was go… [+2387 chars]"
+      },
+      {
+          "source": {
+              "id": null,
+              "name": "Gizmodo.com"
+          },
+          "author": "Angely Mercado",
+          "title": "This Has Officially Been the Hottest Summer Ever Recorded",
+          "description": "Sky-high temperatures and brutal heat waves have scorched the planet these past three months, creating the hottest Northern Hemisphere summer on record, the UN’s World Meteorological Organization and European climate service Copernicus announced today.Read mo…",
+          "url": "https://gizmodo.com/this-is-officially-the-hottest-summer-ever-recorded-1850809008",
+          "urlToImage": "https://i.kinja-img.com/gawker-media/image/upload/c_fill,f_auto,fl_progressive,g_center,h_675,pg_1,q_80,w_1200/06446c32c269eccb779317fb34cb4e7f.jpg",
+          "publishedAt": "2023-09-06T17:30:41Z",
+          "content": "Sky-high temperatures and brutal heat waves have scorched the planet these past three months, creating the hottest Northern Hemisphere summer on record, the UNs World Meteorological Organization and … [+2549 chars]"
+      },
+      {
+          "source": {
+              "id": "bbc-news",
+              "name": "BBC News"
+          },
+          "author": "https://www.facebook.com/bbcnews",
+          "title": "Ken Paxton: Why Republicans are impeaching a Trump ally in Texas",
+          "description": "Ken Paxton's trial exposes deep divides between the party's pro-Trump and establishment factions.",
+          "url": "https://www.bbc.co.uk/news/world-us-canada-66722742",
+          "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/DB69/production/_130996165_gettyimages-539558750.jpg",
+          "publishedAt": "2023-09-05T21:14:47Z",
+          "content": "The impeachment trial for Texas Attorney General Ken Paxton began on Tuesday, setting the stage for a political and legal drama that exposes deep divides within the Republican Party.\r\nThe fate of the… [+5867 chars]"
+      },
+      {
+          "source": {
+              "id": "bbc-news",
+              "name": "BBC News"
+          },
+          "author": "https://www.facebook.com/bbcnews",
+          "title": "Danelo Cavalcante: Heat signal sparked scramble to snare Pennsylvania fugitive",
+          "description": "A \"heat signal\" and a law enforcement dog helped catch the convicted murder, who evaded officers for 14 days.",
+          "url": "https://www.bbc.co.uk/news/world-us-canada-66802491",
+          "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/3FBE/production/_131081361_6f68221e91862f685d1f6c6bb5f3988df4f1d92c108_43_3702_20821000x563.jpg",
+          "publishedAt": "2023-09-13T18:48:56Z",
+          "content": "Media caption, Watch: The Pennsylvania manhunt... two weeks in 100 seconds\r\nA \"heat signature\" detected by a plane sparked a seven-hour scramble to capture escaped Pennsylvania inmate Danelo Cavalcan… [+4375 chars]"
+      },
+      {
+          "source": {
+              "id": "bbc-news",
+              "name": "BBC News"
+          },
+          "author": "https://www.facebook.com/bbcnews",
+          "title": "Ex-Secret Service agent reveals new JFK assassination detail",
+          "description": "Ex-Secret Service agent Paul Landis reveals a new detail some say upends the \"single bullet theory\".",
+          "url": "https://www.bbc.co.uk/news/world-us-canada-66792977",
+          "urlToImage": "https://ichef.bbci.co.uk/news/1024/branded_news/FAE3/production/_131072246_gettyimages-515287546.jpg",
+          "publishedAt": "2023-09-13T00:47:02Z",
+          "content": "Six decades later, new details are still coming to light in one of the most scrutinised events in American history: the assassination of President John F Kennedy.\r\nPaul Landis, an 88-year-old former … [+7584 chars]"
+      },
+      {
+          "source": {
+              "id": "ars-technica",
+              "name": "Ars Technica"
+          },
+          "author": "Stephen Clark",
+          "title": "FAA says SpaceX has more to do before Starship can fly again",
+          "description": "The federal regulator says SpaceX must implement 63 corrective actions.",
+          "url": "https://arstechnica.com/space/2023/09/faa-says-spacex-has-more-to-do-before-starship-can-fly-again/",
+          "urlToImage": "https://cdn.arstechnica.net/wp-content/uploads/2023/09/GettyImages-1252013149-760x380.jpg",
+          "publishedAt": "2023-09-08T19:40:18Z",
+          "content": "Enlarge/ A discolored plume of exhaust was visible beneath the Super Heavy booster's Raptor engines on the Starship rocket's April 20 test flight, a likely indication of a propellant leak or fire in … [+3133 chars]"
+      },
+      {
+          "source": {
+              "id": "ars-technica",
+              "name": "Ars Technica"
+          },
+          "author": "Beth Mole",
+          "title": "Conservative judges revive case on FDA’s “you are not a horse” ivermectin posts",
+          "description": "You are still not a horse, but FDA will go to court over its authority to advise you.",
+          "url": "https://arstechnica.com/health/2023/09/conservative-judges-revive-case-on-fdas-you-are-not-a-horse-ivermectin-posts/",
+          "urlToImage": "https://cdn.arstechnica.net/wp-content/uploads/2021/08/GettyImages-1232983095-760x380.jpeg",
+          "publishedAt": "2023-09-05T22:54:36Z",
+          "content": "Enlarge/ Tablets of ivermectin.\r\n35 with \r\nA panel of conservative judges has revived a lawsuit over the Food and Drug Administration's statements about the anti-parasitic and de-worming drug ivermec… [+4464 chars]"
+      }
+    ]  
+  }    
