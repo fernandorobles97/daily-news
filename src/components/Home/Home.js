@@ -51,7 +51,7 @@ const Home = ({ articles, filteredArticles, searching }) => {
           </select>
         </div> */}
       </div>
-      {searching ? <CardContainer articlesToDisplay={filteredArticles} /> : <CardContainer articlesToDisplay={articles} searching={searching} /> }
+      {searching ? <CardContainer articlesToDisplay={filteredArticles} /> : <CardContainer articlesToDisplay={articles} /> }
     </section>
   )
 }

@@ -3,61 +3,19 @@ import logo from '../../images/logo.png'
 import search from '../../images/search-icon.png'
 import { useEffect, useState } from 'react'
 
-const NavBar = ({ articles, updateFilteredArticles, filteredArticles, updateSearching }) => {
+const NavBar = ({ articles, updateFilteredArticles, updateSearching }) => {
   const [searchInput, setSearchInput] = useState("")
 
-  function capitalizeFirstLetter(string) {
-    return string.charAt(0).toUpperCase() + string.slice(1);
-  }
-
   useEffect(() => {
-    // const handleInputChange = (searchInput) => {
-      // e.preventDefault();
-
-  
-      // setSearchInput(e.target.value);
-  
-      // console.log('val', e.target.value)
-  
-      if (searchInput.length > 0) {
-        updateSearching(true);
-        return updateFilteredArticles(articles.filter(article => {
-          return article.title.toLowerCase().includes(searchInput);
-        }));
-      } else {
-        updateSearching(false)
-      }
-      console.log('fil',filteredArticles)
-    // };
-  },[searchInput])
-
-  // const handleInputChange = (e) => {
-  //   // e.preventDefault();
-  //   updateSearching(true);
-
-  //   setSearchInput(e.target.value);
-
-  //   console.log('val', e.target.value)
-
-  //   if (searchInput.length > 0) {
-  //     return updateFilteredArticles(articles.filter(article => {
-  //       return article.title.toLowerCase().includes(searchInput);
-  //     }));
-  //   } 
-  //   console.log('fil',filteredArticles)
-  // };
-  
-  console.log('sear', searchInput)
-
-  const updateArticles = () => {
     if (searchInput.length > 0) {
+      updateSearching(true);
       return updateFilteredArticles(articles.filter(article => {
-        return article.title.includes(searchInput);
+        return article.title.toLowerCase().includes(searchInput);
       }));
+    } else {
+      updateSearching(false)
     }
-    console.log('fil',filteredArticles)
-  }
-
+  },[searchInput])
 
   return (
     <nav className='navbar'>

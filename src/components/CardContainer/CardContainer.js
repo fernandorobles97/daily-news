@@ -1,7 +1,7 @@
 import ArticleCard from '../ArticleCard/ArticleCard'
 import './CardContainer.css'
 
-const CardContainer = ({ articlesToDisplay, searching }) => {
+const CardContainer = ({ articlesToDisplay }) => {
   const allArticleCards = articlesToDisplay.map(article => {
     return (
       <ArticleCard
