@@ -1,10 +1,11 @@
 import ArticleCard from '../ArticleCard/ArticleCard'
 import './CardContainer.css'
 
-const CardContainer = ({ articles }) => {
-  const allArticleCards = articles.map(article => {
+const CardContainer = ({ articlesToDisplay, searching }) => {
+  const allArticleCards = articlesToDisplay.map(article => {
     return (
       <ArticleCard
+        key={article.title}
         title={article.title}
         source={article.source.name}
         date={article.publishedAt}

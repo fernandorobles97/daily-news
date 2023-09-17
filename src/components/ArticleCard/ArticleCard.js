@@ -11,7 +11,7 @@ const ArticleCard = ({ title, source, date, imgSrc }) => {
   }
 
   return (
-    <Link to={`/${title}`} className='article-card' >
+    <Link to={`/${title}`} className='article-card' key={title} >
       <div className='article-details' >
         <h1>{title}</h1>
         <h2>Source: {source}</h2>
