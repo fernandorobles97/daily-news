@@ -1,9 +1,9 @@
 import './NavBar.css'
 import logo from '../../images/logo.png'
-import search from '../../images/search-icon.png'
+import clear from '../../images/delete.png'
 import { useEffect, useState } from 'react'
 
-const NavBar = ({ articles, updateFilteredArticles, updateSearching }) => {
+const NavBar = ({ searching, articles, updateFilteredArticles, updateSearching }) => {
   const [searchInput, setSearchInput] = useState("")
 
   useEffect(() => {
@@ -17,16 +17,20 @@ const NavBar = ({ articles, updateFilteredArticles, updateSearching }) => {
     }
   },[searchInput])
 
+  const clearSearch = (e) => {
+    e.preventDefault()
+    setSearchInput("")
+  }
+
   return (
     <nav className='navbar'>
       <img className='logo' src={logo} alt='logo for the daily news' />
-      <form action='/' className='searchbar' method="get">
-        <label><h1>Search: </h1></label>
-        <input className='search-input' type='text' placeholder='Search By Keyword...' onChange={e => setSearchInput(e.target.value)}  value={searchInput} ></input>
-        {/* <button type='submit'onClick={updateArticles}> 
-          <img className='search-icon' src={search} alt='symbol for search icon' /> 
-        </button> */}
-      </form>
+      <div className='searchbar' >
+        <input className='search-input' type='text' placeholder='Search By Keyword...' onChange={(e) => setSearchInput(e.target.value)}  value={searchInput} ></input>
+        {searching && <button type='submit' onClick={clearSearch}> 
+          <img className='clear-icon' src={clear} alt='symbol for clear icon' /> 
+        </button>}
+      </div>
     </nav>)
 }
 

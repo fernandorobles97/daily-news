@@ -43,7 +43,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <NavBar articles={articles} updateFilteredArticles={updateFilteredArticles} filteredArticles={filteredArticles} updateSearching={updateSearching} />
+      <NavBar searching={searching} articles={articles} updateFilteredArticles={updateFilteredArticles} filteredArticles={filteredArticles} updateSearching={updateSearching} />
       <Routes>
         <Route path='/' element={<Home filteredArticles={filteredArticles} articles={articles} searching={searching} />} />
         <Route path='/:article' element={<ArticleDetails />} />
