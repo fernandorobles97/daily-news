@@ -15,7 +15,7 @@ const CardContainer = ({ articlesToDisplay }) => {
 
   return (
     <div className='card-container'>
-      {allArticleCards}
+      {articlesToDisplay.length ? allArticleCards : <h1>Sorry, there's no articles found based on your search!</h1>}
     </div>
   )
 }
