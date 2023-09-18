@@ -1,0 +1,5 @@
+.article-details {
+  height: 80vh;
+  width: 100vw;
+  display: flex;
+}
