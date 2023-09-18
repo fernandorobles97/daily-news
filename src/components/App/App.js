@@ -11,6 +11,7 @@ import newsData from '../../newsData.json'
 const App = () => {
   const [articles, setArticles] = useState(newsData.articles)
   const [filteredArticles, setFilteredArticles] = useState([])
+  const [currentArticle, setCurrentArticle] = useState(null)
   const [error, setError] = useState(null)
   const [loading, setLoading] = useState(false)
   const [searching, setSearching] = useState(false)
@@ -21,6 +22,11 @@ const App = () => {
 
   const updateFilteredArticles = (articleData) => {
     setFilteredArticles(articleData)
+  }
+
+  const updateCurrentArticle = (title) => {
+    let foundArticle = articles.find(article => article.title === title)
+    setCurrentArticle(foundArticle)
   }
 
   // useEffect(() => {
@@ -46,7 +52,7 @@ const App = () => {
       <NavBar searching={searching} articles={articles} updateFilteredArticles={updateFilteredArticles} filteredArticles={filteredArticles} updateSearching={updateSearching} />
       <Routes>
         <Route path='/' element={<Home filteredArticles={filteredArticles} articles={articles} searching={searching} />} />
-        <Route path='/:article' element={<ArticleDetails />} />
+        <Route path='/:article' element={<ArticleDetails currentArticle={currentArticle} updateCurrentArticle={updateCurrentArticle} />} />
       </Routes>
     </div>
   );
