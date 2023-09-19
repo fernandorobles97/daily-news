@@ -8,7 +8,7 @@
   text-decoration: none;
 }
 
-.article-details {
+.card-details {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,7 +16,7 @@
   width: 70vw;
 }
 
-.article-details h2 {
+.card-details h2 {
   font-weight: 400;
 }
 
