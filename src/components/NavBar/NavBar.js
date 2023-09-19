@@ -2,7 +2,7 @@ import './NavBar.css'
 import logo from '../../images/logo.png'
 import clear from '../../images/delete.png'
 import { useEffect, useState } from 'react'
-import { useLocation } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 
 const NavBar = ({ searching, articles, updateFilteredArticles, updateSearching }) => {
   const [searchInput, setSearchInput] = useState("")
@@ -25,7 +25,9 @@ const NavBar = ({ searching, articles, updateFilteredArticles, updateSearching }
 
   return (
     <nav className='navbar'>
-      <img className='logo' src={logo} alt='logo for the daily news' />
+      <Link to={'/'}>      
+        <img className='logo' src={logo} alt='logo for the daily news' /> 
+      </Link> 
       {useLocation().pathname === '/' && <div className='searchbar' >
         <input className='search-input' type='text' placeholder='Search By Keyword...' onChange={(e) => setSearchInput(e.target.value)}  value={searchInput} ></input>
         {searching && <button type='submit' onClick={clearSearch}> 
