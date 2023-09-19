@@ -13,10 +13,19 @@ const ArticleDetails = ({ currentArticle, updateCurrentArticle }) => {
   <div className='article-details'>
     <h1>{currentArticle.title}</h1>
     <div className='author-and-source'>
-      <h2>Author: {currentArticle.author}</h2>
-      <h2>Source: {currentArticle.source}</h2>
+      <div className='author-source-container'>
+        <h2>Author:  </h2>
+        {currentArticle.author}
+      </div>
+      <div className='author-source-container'>
+        <h2>Source:</h2>
+        {currentArticle.source}
+      </div>
     </div>
-    <p>{currentArticle.content}</p>
+    <div className='description-container'>
+      <h2>Description</h2>
+      <p className='article-description'>{currentArticle.content}</p>
+    </div>
     <img src={currentArticle.urlToImage} />
     <p>Published on {currentArticle.publishedAt}</p>
   </div>)
