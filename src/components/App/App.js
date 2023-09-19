@@ -11,7 +11,7 @@ import newsData from '../../newsData.json'
 const App = () => {
   const [articles, setArticles] = useState(newsData.articles)
   const [filteredArticles, setFilteredArticles] = useState([])
-  const [currentArticle, setCurrentArticle] = useState(null)
+  const [currentArticle, setCurrentArticle] = useState({})
   const [error, setError] = useState(null)
   const [loading, setLoading] = useState(false)
   const [searching, setSearching] = useState(false)
@@ -26,12 +26,9 @@ const App = () => {
 
   const updateCurrentArticle = (title) => {
     let foundArticle = articles.find(article => article.title === title)
-    setCurrentArticle(foundArticle)
+    const newArticle = { ...foundArticle, source: foundArticle.source.name }
+    setCurrentArticle(newArticle)
   }
-
-  // useEffect(() => {
-
-  // }, [filteredArticles.length])
 
   // useEffect(() => {
   //   const apiCall = async () => {
