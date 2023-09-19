@@ -7,11 +7,18 @@ const ArticleDetails = ({ currentArticle, updateCurrentArticle }) => {
 
   useEffect(() => {
     updateCurrentArticle(location)
-  }, [currentArticle])
-  
+  }, [])
+
   return (
   <div className='article-details'>
     <h1>{currentArticle.title}</h1>
+    <div className='author-and-source'>
+      <h2>{currentArticle.author}</h2>
+      <h2>{currentArticle.source}</h2>
+    </div>
+    <p>{currentArticle.content}</p>
+    <img src={currentArticle.urlToImage} />
+    <p>{currentArticle.publishedAt}</p>
   </div>)
 }
 
