@@ -7,6 +7,7 @@ import ArticleDetails from '../ArticleDetails/ArticleDetails';
 import getAllArticles from '../../apiCalls';
 import newsData from '../../newsData.json'
 import formatDate from '../../helperFunctions';
+import Empty from '../Empty/Empty';
 
 
 const App = () => {
@@ -50,7 +51,8 @@ const App = () => {
       <NavBar searching={searching} articles={articles} updateFilteredArticles={updateFilteredArticles} filteredArticles={filteredArticles} updateSearching={updateSearching} />
       <Routes>
         <Route path='/' element={<Home filteredArticles={filteredArticles} articles={articles} searching={searching} />} />
-        <Route path='/:article' element={<ArticleDetails currentArticle={currentArticle} updateCurrentArticle={updateCurrentArticle} />} />
+        <Route path='/article/:title' element={<ArticleDetails currentArticle={currentArticle} updateCurrentArticle={updateCurrentArticle} error={error} /> } />
+        <Route path={'/*'} element={<Empty />} />
       </Routes>
     </div>
   );
