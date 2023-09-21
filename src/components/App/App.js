@@ -13,7 +13,7 @@ import Empty from '../Empty/Empty';
 const App = () => {
   const [articles, setArticles] = useState(newsData.articles)
   const [filteredArticles, setFilteredArticles] = useState([])
-  const [currentArticle, setCurrentArticle] = useState({})
+  const [currentArticle, setCurrentArticle] = useState(null)
   const [error, setError] = useState(null)
   const [loading, setLoading] = useState(false)
   const [searching, setSearching] = useState(false)
@@ -28,6 +28,9 @@ const App = () => {
 
   const updateCurrentArticle = (title) => {
     let foundArticle = articles.find(article => article.title === title)
+    if (!foundArticle) {
+      return null
+    }
     const newArticle = { ...foundArticle, source: foundArticle.source.name, publishedAt: formatDate(foundArticle.publishedAt) }
     setCurrentArticle(newArticle)
   }
