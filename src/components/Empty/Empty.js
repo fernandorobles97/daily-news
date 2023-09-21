@@ -1,9 +1,9 @@
 import './Empty.css'
 
-const Empty = () => {
+const Empty = ({ errorMessage }) => {
   return (
     <div className='empty-page'>
-      <h1>This page does not exist, please go back!</h1>
+      <h1>{errorMessage}</h1>
     </div>
   )
 }
