@@ -11,7 +11,7 @@ import Empty from '../Empty/Empty';
 
 
 const App = () => {
-  const [articles, setArticles] = useState(newsData.articles)
+  const [articles, setArticles] = useState([])
   const [filteredArticles, setFilteredArticles] = useState([])
   const [currentArticle, setCurrentArticle] = useState(null)
   const [error, setError] = useState(null)
@@ -35,19 +35,19 @@ const App = () => {
     setCurrentArticle(newArticle)
   }
 
-  // useEffect(() => {
-  //   const apiCall = async () => {
-  //     setLoading(true)
-  //     try {
-  //       setArticles(await getAllArticles())
-  //       setLoading(false)
-  //     }catch(error) {
-  //       setError(error)
-  //     }
-  //     setLoading(false)
-  //   } 
-  //   apiCall()
-  // }, [])
+  useEffect(() => {
+    const apiCall = async () => {
+      setLoading(true)
+      try {
+        setArticles(await getAllArticles())
+        setLoading(false)
+      }catch(error) {
+        setError(error)
+      }
+      setLoading(false)
+    } 
+    apiCall()
+  }, [])
 
   return (
     <div className="App">
