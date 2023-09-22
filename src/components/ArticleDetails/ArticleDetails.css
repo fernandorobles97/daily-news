@@ -53,6 +53,10 @@
   margin: 0;
 }
 
+.article-link {
+  color: black;
+}
+
 @media screen and (max-width: 1100px) {
   .article-details h1 {
     margin: 10px;
