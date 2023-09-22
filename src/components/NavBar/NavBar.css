@@ -40,3 +40,58 @@
   height: auto;
   max-width: 100%;
 }
+
+@media screen and (max-width: 850px) {
+  .logo {
+    margin-right: 5vw;
+    height: auto;
+    width: 55vw;
+  }
+  .searchbar {
+    display: flex;
+    align-items: flex-start;
+    margin: 0;
+  }
+  .searchbar button {
+    width: auto;
+  }
+  .clear-icon {
+    width: 3vw;
+  }
+  .search-input {
+    height: 3vh;
+    width: 30vw;
+  }
+  .navbar {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  .logo {
+    margin: 0;
+    width: 100vw;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .searchbar {
+    display: flex;
+    align-items: flex-start;
+    margin: 0;
+  }
+  .searchbar button {
+    width: auto;
+  }
+  .clear-icon {
+    width: 7vw;
+  }
+  .search-input {
+    height: 3vh;
+    width: 50vw;
+  }
+}
