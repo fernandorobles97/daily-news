@@ -64,9 +64,6 @@
   .article-details p {
     margin: 10px;
   }
-  .article-details h1, h2, p {
-    font-size: 15px;
-  }
 .description-container {
   width: 80vw;
 }
@@ -75,4 +72,10 @@
   flex-direction: column;
   align-items: center;
 }
+}
+
+@media screen and (max-width: 700px) {
+  .article-details h1, h2, p {
+    font-size: 15px;
+  }
 }
