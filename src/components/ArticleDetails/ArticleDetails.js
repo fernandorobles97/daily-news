@@ -17,11 +17,11 @@ const ArticleDetails = ({ currentArticle, updateCurrentArticle }) => {
       <div className='author-and-source'>
         <div className='author-source-container'>
           <h2>Author:  </h2>
-          {currentArticle.author}
+          <p>{currentArticle.author}</p>
         </div>
         <div className='author-source-container'>
           <h2>Source:</h2>
-          {currentArticle.source}
+          <p>{currentArticle.source}</p>
         </div>
       </div>
       <div className='description-container'>
