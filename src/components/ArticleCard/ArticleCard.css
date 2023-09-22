@@ -16,6 +16,10 @@
   width: 70vw;
 }
 
+.card-details h1 {
+  width: 45vw;
+}
+
 .card-details h2 {
   font-weight: 400;
 }
@@ -28,4 +32,27 @@
 .img-container {
   height: 150px;
   width: 300px
+}
+
+@media screen and (max-width: 650px) {
+  .article-card {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    padding: 0;
+    min-height: 50vh;
+  }
+  .img-container {
+    width: 325px;
+    margin: 2vh;
+  }
+  .card-details h2, h1, p{
+    font-size: 15px;
+  }
+  .card-details h2, p{
+    margin: 0;
+  }
+  .card-details h1 {
+    width: 90vw;
+  }
 }
